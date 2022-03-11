@@ -48,7 +48,7 @@ help_command = {
 
 @bot.event
 async def on_ready():
-    print(f"Logged in as {bot.user}")
+    print("Logged in as", bot.user)
 
 async def botpinged(message):
         if re.fullmatch(rf"<@!?{bot.user.id}>", message.content):
